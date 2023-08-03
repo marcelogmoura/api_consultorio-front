@@ -23,8 +23,12 @@
               Gerenciar Pacientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="gerenciarPacientesDropdown">
-              <li><a class="dropdown-item" href="#">Cadastrar Pacientes</a></li>
-              <li><a class="dropdown-item" href="#">Consultar Pacientes</a></li>
+              <li><a class="dropdown-item"
+                     routerLink="pacientes-cadastro"
+                     href="#">Cadastrar Pacientes</a></li>
+              <li><a class="dropdown-item"
+                     routerLink="pacientes-consulta"
+                     href="#">Consultar Pacientes</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -32,12 +36,30 @@
               Gerenciar Atendimentos
             </a>
             <ul class="dropdown-menu" aria-labelledby="gerenciarAtendimentosDropdown">
-              <li><a class="dropdown-item" href="#">Cadastrar Atendimento</a></li>
-              <li><a class="dropdown-item" href="#">Consultar Atendimentos</a></li>
+              <li><a class="dropdown-item"
+                     routerLink="atendimentos-cadastro"
+                     href="#">Cadastrar Atendimento</a></li>
+              <li><a class="dropdown-item"
+                     routerLink="atendimentos-consulta"
+                     href="#">Consultar Atendimentos</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+</div>
+
+
+<div class="container">
+
+
+  <div class="card m-3">
+      <div class="card-body">
+          <!-- exibir o conteudo das demais páginas -->
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+
+
 </div>

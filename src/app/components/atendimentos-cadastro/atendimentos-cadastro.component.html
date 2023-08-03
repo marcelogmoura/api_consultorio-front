@@ -1,1 +1,58 @@
-<p>atendimentos-cadastro works!</p>
+
+
+<div>
+
+  <h5 class="fs-3">Cadastro de Atendimento</h5>
+  <p> </p>
+  <hr />
+
+
+  <form>
+        <div class="col-md-5">
+            <label>Paciente:</label>
+            <select class="form-select">
+                <option value="">Selecione</option>
+            </select>
+        </div><br>
+
+        <div class="col-md-3">
+            <label>Tipo:</label>
+            <select class="form-select">
+                <option value="">Escolha uma opção</option>
+                <option value="Particular">Particular</option>
+                <option value="Plano">Plano</option>
+            </select>
+        </div><br>
+
+        <div class="col-md-2">
+            <label>Quantidade:</label>
+            <input type="number" class="form-control" />
+        </div><br>
+
+        <div class="col-md-2">
+            <label>Data:</label>
+            <input type="date" class="form-control" />
+        </div><br>
+
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <label>Observações:</label>
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+
+
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <input type="submit" class="btn btn-success me-2"
+                   value="Realizar Cadastro"/>
+            <a class="btn btn-light" routerLink="/movimentacoes-
+                      consulta">Ir para a consulta</a>
+        </div>
+    </div>
+
+
+</form>
+
+
+</div>
